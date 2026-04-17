@@ -1,0 +1,1 @@
+export const logooo = "path/to/image.png";

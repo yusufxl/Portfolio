@@ -1,0 +1,28 @@
+.nav {
+  
+  background-color: #0f182c85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.logo  img{
+    width: 40px;    
+      display: block;
+}
+.logo{
+     flex: 0 0 auto;
+     transition: 1s ease;
+}
+.logo:hover{
+    scale: (1.1);
+}
+
+.nav_box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   align-items: center;
+}
+
+

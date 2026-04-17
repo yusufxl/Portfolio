@@ -1,0 +1,113 @@
+.bottom_nav {
+    display: flex;
+    position: sticky !important;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    height: 65px;
+    background: #111;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bottom_nav__link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #aaa;
+    z-index: 2;
+}
+
+
+.bottom_nav__indicator {
+    position: absolute;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    background: #ffffff38;
+    border-radius: 12px;
+    transform: translateX(-50%);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.bottom_nav {
+    display: none;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .bottom_nav {
+        display: flex;
+        position: sticky !important;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 500px;
+        height: 65px;
+        background: #111;
+        border-radius: 20px;
+        align-items: center;
+        overflow: hidden;
+        z-index: 0;
+        margin-left: 50%;
+    }
+
+    .bottom_nav__link {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: #aaa;
+        z-index: 2;
+    }
+
+    .bottom_nav__indicator {
+        position: absolute;
+        top: 10px;
+        width: 45px;
+        height: 45px;
+        background: #ffffff34;
+        border-radius: 12px;
+        transform: translateX(-50%);
+        transition: left 0.3s ease;
+        z-index: 1;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .bottom_nav {
+        position: sticky !important;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: 55px;
+        border-radius: 16px;
+        bottom: 10px;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .bottom_nav__link {
+        font-size: 22px;
+    }
+
+    .bottom_nav__indicator {
+        width: 42px;
+        height: 42px;
+        top: 8px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,30 @@
+.light-rays-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    pointer-events: none;
+    z-index: 3;
+    overflow: hidden;
+}
+
+
+.page {
+    position: relative;
+    min-height:100vh;
+    overflow: hidden;
+}
+
+ 
+.bg {
+    position: fixed;
+    margin-top: 180px;
+ 
+    inset: 0;
+    z-index: -1;
+ 
+}
+ 
+main {
+    position: relative;
+    z-index: 1;
+}
